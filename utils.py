@@ -386,15 +386,23 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'https://du-link.in/api'
-    params = {'api': '5486d155f5186ac5e5bf128f8a54d72fe3680a28',
-              'url': link,
+
+    url = f'https://api.shareus.in/shortLink'
+    params = {'token': SHORTENER_API,
+              'link': link,
+              'format': 'json'
               }
 
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
-            data = await response.json()
-            if data["status"] == "success":
-                return data['shortenedUrl']
-            else:
-                return f"Error: {data['message']}"
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
+                data = await response.json(content_type='text/html')
+                if data["status"] == "success":
+                    return data['shortlink']
+                else:
+                    logger.error(f"Error: {data['message']}")
+                    return f'https://api.shareus.in/directLink?token={SHORTENER_API}&link={link}'
+
+    except Exception as e:
+        logger.error(e)
+        return f'https://api.shareus.in/directLink?token={SHORTENER_API}&link={link}'
