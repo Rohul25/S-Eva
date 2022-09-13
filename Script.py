@@ -1,34 +1,24 @@
 class script(object):
 
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
+START_TXT = """𝑯𝒆𝒍𝒍𝒐 **{}**,
+𝑻𝒉𝒂𝒏𝒌𝒔 𝑭𝒐𝒓 𝑼𝒔𝒊𝒏𝒈 𝑴𝒆 🤩. 𝑰 𝒂𝒎 𝒂 𝒑𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐-𝑭𝒊𝒍𝒕𝒆𝒓 𝒃𝒐𝒕 𝑾𝒐𝒓𝒌𝒊𝒏𝒈 24𝒙7.
+𝑱𝒖𝒔𝒕 𝑪𝒍𝒊𝒄𝒌 𝑩𝒆𝒍𝒐𝒘 𝑩𝒖𝒕𝒕𝒐𝒏, 𝑨𝒅𝒅 𝑴𝒆 𝒂𝒔 𝑨𝒅𝒎𝒊𝒏. 𝑻𝒉𝒂𝒕'𝒔 𝒊𝒕 𝑰 𝒘𝒊𝒍𝒍 𝑷𝒓𝒐𝒗𝒊𝒅𝒆 𝑴𝒐𝒗𝒊𝒆𝒔 𝑰𝒏 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑.
+𝑴𝒂𝒊𝒏𝒕𝒂𝒊𝒏𝒆𝒅 𝑩𝒚 - **@ViralBeatz**
+"""
+    HELP_TXT = """🚩 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ʜᴇʟᴘ ᴍᴏᴅᴜʟᴇs"""
+    ABOUT_TXT = """
+**🤖 ʙᴏᴛ ɴᴀᴍᴇ: ɢʀɪғғɪɴ 
 
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, Iam A Simple Auto Filter + Movie Search + Manual Filter Bot. I Can Provide Movies In Telegram Groups. You Can Search Movies Via Inline. I Can Also Add Filters In Telegram Groups.  Just Add Me To Your Group And Enjoy"""
+📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 
 
-    HELP_TXT = """𝙷𝙴𝚈 {}
+📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏʀᴏɢʀᴀᴍ
 
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+📡 ʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ 
 
-    ABOUT_TXT = """🤖 ʙᴏᴛ ɴᴀᴍᴇ: {}
-
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/Belikeberlin>BERLIN✨❣️</a>
-
-📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-
-📝 ʟᴀɴɢᴜᴀɢᴇ: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-
-🗂️ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-
-📡 ʜᴏsᴛᴇᴅ ᴏɴ: 𝙷𝙴𝚁𝙾𝙺𝚄
-
-👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: <a href=https://t.me/srilinks4ksupport>SUPPORTGROUP</a>"""
-
-    SOURCE_TXT = """<b>NOTE:</b>
-
-- SM18FILTERBOT was private repo. 
-
-- Source - https://t.me/srilinks4k
-
-<b>DEVS:</b>
+📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : @ViralBeatz**"""
+    SOURCE_TXT = """Sorry It's Private Bot. 
+Made By - @ViralBeatz"""
+    <b>DEVS:</b>
 
 - <a href=https://t.me/belikeberlin>Berlin ✨❣️</a>"""
 
