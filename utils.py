@@ -377,17 +377,14 @@ def humanbytes(size):
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
 
-
-
-####################  Dulink  ####################
-
+##
 async def get_shortlink(link):
     https = link.split(":")[0]
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
 
-    url = f'https://api.shareus.in/shortLink'
+    url = f'https://linkbnao.com/shortLink'
     params = {'token': SHORTENER_API,
               'link': link,
               'format': 'json'
@@ -401,8 +398,8 @@ async def get_shortlink(link):
                     return data['shortlink']
                 else:
                     logger.error(f"Error: {data['message']}")
-                    return f'https://api.shareus.in/directLink?token={SHORTENER_API}&link={link}'
+                    return f'https://linkbnao.com/api?api={SHORTENER_API}&link={link}'
 
     except Exception as e:
         logger.error(e)
-        return f'https://api.shareus.in/directLink?token={SHORTENER_API}&link={link}'
+        return f'https://linkbnao.com/api?api={SHORTENER_API}&link={link}'
